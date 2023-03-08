@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import NftModal from './NftModal'
 import imageOne from "../utils/images/nft-1.png"
 
-const API_KEY = "pgEKI8Ykt0tQUHC9RRU47LD3hpFXOJiVthbNwfipXc3WlnTle13aGoYZeyTlDLab"
+// const API_KEY = ""
 const base_url = "https://deep-index.moralis.io/api/v2/nft"
 const NftCard = ({nft, activateModal, setSelectedNFT, token_address, token_id, address, network, setActivateModal}) => {  
 
@@ -16,7 +16,6 @@ const NftCard = ({nft, activateModal, setSelectedNFT, token_address, token_id, a
      
     }
     };
-    console.log(token_address, token_id)
     if(network != "" && address != ""){
         try {
           const {data} = await axios.get(`${base_url}/${token_address}/${token_id}?chain=${network}`, config)

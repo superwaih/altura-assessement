@@ -10,7 +10,6 @@ function App() {
   const[address, setAddress] = useState("")
   const[network, setNetwork] = useState("")
   const[loading, setLoading] = useState(false)
-  console.log(totalNFTs)
 
   return (
     <div className="App relative">
@@ -31,7 +30,7 @@ function App() {
        selectedNFT={selectedNFT}
        setSelectedNFT={setSelectedNFT}
         />
-      {activateModal && (<NftModal nft={selectedNFT} />)}
+      {activateModal && (<NftModal setActivateModal={setActivateModal} activateModal={activateModal} nft={selectedNFT} />)}
     </div>
   )
 }

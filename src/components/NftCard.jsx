@@ -33,7 +33,7 @@ const NftCard = ({nft, activateModal, setSelectedNFT, token_address, token_id, a
   //     fetchUniqueNFT()
   // },[address])
   return (
-    <>
+
     <div  onClick={() => setSelectedNFT(nft)} key={token_id} className='flex justify-center items-center'>
       <div onClick={() => setActivateModal(!activateModal)} className='box-shadow  max-w-[380px] hover:scale-105 cursor-pointer duration-300 flex flex-col'>
       <div className="img w-full px-3 py-3">
@@ -53,8 +53,6 @@ const NftCard = ({nft, activateModal, setSelectedNFT, token_address, token_id, a
     </div>
     
     </div>
-   
-    </>
   )
 }
 

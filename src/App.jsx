@@ -30,7 +30,7 @@ function App() {
        selectedNFT={selectedNFT}
        setSelectedNFT={setSelectedNFT}
         />
-      {activateModal && (<NftModal setActivateModal={setActivateModal} activateModal={activateModal} nft={selectedNFT} />)}
+      {activateModal && (<NftModal setActivateModal={setActivateModal} network={network} activateModal={activateModal} nft={selectedNFT} />)}
     </div>
   )
 }

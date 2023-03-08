@@ -23,6 +23,7 @@ const SearchInput = ({address, setAddress, loading, setLoading, setTotalNFTs, ne
           const {data} = await axios.get(`${base_url}/${address}/nft?chain=${network}&format=decimal`, config)
           setTotalNFTs(data.result)
           setLoading(false)
+          console.log(data.result)
           
         } catch (error) {
           console.log(error)

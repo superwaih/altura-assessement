@@ -10,7 +10,7 @@ const NftModal = ({nft, activateModal, network, setActivateModal}) => {
 
   const metadata = JSON.parse(nft?.metadata)
   return (
-    <div className='fixed bg-black min-h-[60vh] left-8 right-8 md:left-[20%] md:right-[20%]  top-[25%] m-auto w-[80%] md:w-[60%] '>
+    <div className='fixed bg-[#131313]  z-50  min-h-[60vh] left-8 right-8 md:left-[20%] md:right-[20%]  top-[17%] m-auto w-[80%] md:w-[60%] '>
       <div onClick={() => setActivateModal(!activateModal)} className='flex cursor-pointer  p-3 w-full justify-end items-end'>
         <div className='bg-main-color hover:bg-white p-3 rounded-full'>
         <AiOutlineClose className=' text-2xl text-black' />
@@ -29,7 +29,7 @@ const NftModal = ({nft, activateModal, network, setActivateModal}) => {
       <div className='flex flex-col justify-between'>
       <div className='flex flex-col '>
         <h3 className='text-[#FFFFFF]/50'>Token Address</h3>
-        <p className='text-main-color font-bold'>{nft?.token_address}</p>
+        <p className='text-main-color text-sm md:text-xl font-bold'>{nft?.token_address}</p>
       </div>
       <div className='flex flex-col '>
         <h3 className='text-[#FFFFFF]/50'>Owned By</h3>

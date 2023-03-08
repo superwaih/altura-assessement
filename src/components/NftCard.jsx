@@ -28,10 +28,6 @@ const NftCard = ({nft, activateModal, setSelectedNFT, token_address, token_id, a
   }
 
   const metadata = JSON.parse(nft?.metadata)
-
-  // useEffect(() => {
-  //     fetchUniqueNFT()
-  // },[address])
   return (
 
     <div  onClick={() => setSelectedNFT(nft)} key={token_id} className='flex justify-center items-center'>
